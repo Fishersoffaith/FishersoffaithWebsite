@@ -1,0 +1,295 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#titleWebsite {
+    font-size: 60px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerLine {
+    background-color: #e0b546;
+    padding: 5px 5px;
+}
+
+/* Desktop nav layout */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2527;
+  color: white;
+  padding: 20px 10px;
+}
+
+nav button, .mobile-menu button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.5s ease;
+}
+
+nav button:hover, .mobile-menu button:hover {
+  background-color: #e0b546;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease;
+  background-color: #2a2527;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.mobile-menu.open {
+  max-height: 500px; /* large enough to fit all buttons */
+  padding: 1rem;
+}
+
+.mobile-menu button {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  background-color: white;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 50px;
+    gap: 200px;
+}
+
+.aboutUsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+}
+
+.aboutUsImage {
+    justify-content: flex-end;
+}
+
+.events {
+    padding: 100px 25px;
+}
+
+.eventsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.eventGroup {
+    padding-left: 10px;
+    max-width: 400px;
+}
+
+.upcomingEvents {
+
+}
+
+.pastEvents {
+
+}
+
+.affiliations {
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.affiliationsButtons {
+  display: flex;
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
+  justify-content: center;
+}
+
+.affiliations button {
+  height: 200px;
+  transition: color 0.5s ease;
+  text-shadow:
+    2px 2px 5px white,
+    -2px -2px 5px white,
+    0 0 10px white;
+}
+
+.affiliations button:hover {
+  color: #e0b546;
+}
+
+.Bernard {
+  width: 200px;/* Or 100% if inside a flexbox container */
+  height: 50px;
+  background-image: url('images/5010201916_9dff5c584e_b.jpg');
+  background-size: cover;     /* Scales image to fill the button */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: black;               /* Set text color if you have text */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Teresa {              
+  width: 200px;/* Or 100% if inside a flexbox container */
+  height: 50px;
+  background-image: url('images/OLC.jpg');
+  background-size: cover;     /* Scales image to fill the button */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: black;               /* Set text color if you have text */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.restChurches {
+  width: 200px;
+  height: 50px;
+  background-image: url('images/st\ charles1.jpg');
+  background-size: cover;     /* Scales image to fill the button */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: black;               /* Set text color if you have text */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.restChurches2 {
+  width: 200px;
+  height: 50px;
+  background-image: url('images/st.joes.jpg');
+  background-size: cover;     /* Scales image to fill the button */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: black;               /* Set text color if you have text */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.restChurches3 {
+  width: 200px;
+  height: 50px;
+  background-image: url('images/st.raph.jpg');
+  background-size: cover;     /* Scales image to fill the button */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: black;               /* Set text color if you have text */
+  font-size: 1rem;
+  cursor: pointer;
+}
+.contact {
+  padding: 15px 25px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto; 
+  padding: 2rem;
+  background-color:  #2a2527;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
+  }
+
+.contact-form label {
+  font-weight: 600;
+  color: white;
+  }
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: white;
+  }
+
+.contact-form button {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e0b546;
+}
+
+footer {
+  background-color: #2a2527;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#events2, #affiliations2, #contactUsTitle, #history {
+  font-size: 60px;
+}
+
+.history {
+  padding: 100px 25px;
+}
+
+.historyParagraph button {
+  padding: 10px;
+  font-family: 'Crimson Text', 'Courier New', Courier, monospace;
+  background-color: #2a2527;
+  color: white;
+  transition: background-color 0.5s ease;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.historyParagraph button:hover {
+  background-color: #e0b546;
+}
