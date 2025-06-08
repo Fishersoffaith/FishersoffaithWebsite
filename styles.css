@@ -6,6 +6,10 @@
   font-family: 'Crimson Text', 'Courier New', Courier, monospace;
 }
 
+p, ul{
+font-size: 20px;
+}
+
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
@@ -32,7 +36,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2a2527;
+  background-color: #25272a;
   color: white;
   padding: 20px 10px;
 }
@@ -87,23 +91,44 @@ main {
   background-color: white;
 }
 
-.aboutUsContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 100px 50px;
-    gap: 200px;
+.MainContent {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.aboutUsText {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 500px;
+.Scroll {
+  max-width: 50%;
 }
 
-.aboutUsImage {
-    justify-content: flex-end;
+.HomeContainer, .PrayerContainer h1 {
+  text-align: center;
 }
+
+.WhatWeAboutText p {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.WhatWeAboutBullets {
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.WhyText p {
+  text-align: left;
+  padding-bottom: 30px;
+}
+.JoinUsText p {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.PrayerContainer p {
+  padding-bottom: 30px;
+}
+
 
 .events {
     padding: 100px 25px;
