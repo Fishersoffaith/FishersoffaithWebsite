@@ -23,6 +23,20 @@ function toggleDesktopSubMenu() {
 }
 
 
+function scrollImages(direction) {
+  const container = document.getElementById("imageTable");
+  const scrollAmount = 120; // Adjust based on image width
+
+  container.scrollBy({
+    left: scrollAmount * direction,
+    behavior: "smooth"
+  });
+}
+
+function handleClick(imageId) {
+  alert("You clicked image " + imageId);
+  // You can do more here (open modal, navigate, etc.)
+}
 
 
 

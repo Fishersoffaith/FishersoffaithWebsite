@@ -382,3 +382,79 @@ footer {
 .historyParagraph button:hover {
   background-color: #e0b546;
 }
+
+
+
+
+
+
+
+
+
+
+.image-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image-table {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.image-table::-webkit-scrollbar {
+  display: none;
+}
+
+.image-table table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.image-table td {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.image-table img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons on top of image area */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
