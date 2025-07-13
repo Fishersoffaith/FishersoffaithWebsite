@@ -46,7 +46,7 @@ html, body {
   background-color: #531212;
   color: #faf5f2;
   padding: 20px 10px;
-  background-image: url('I');
+  /*background-image: url('');*/
 }
 
 nav button, .mobile-menu button {
@@ -166,7 +166,7 @@ main {
   display: flex;
   justify-content: center;
   align-content: center;
-  /*background-image: url(Michael-B.jpg);*/
+  background-image: url(Michael-B.jpg);
 }
 
 .Scroll {
