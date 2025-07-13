@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resizeStyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,600;1,600&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        
+    <header>
+        <div class="header-content">
+
+            <h1 id="titleWebsite">Fishers of Faith</h1>
+
+            <nav class="desktop-nav">
+                <a href="./index.html"><button>Home</button></a>
+
+                <div class="menu-group">
+                    <button id="desktopSubmenuToggle" onclick="toggleDesktopSubMenu()">Adult Formation ▼</button>
+                    <div class="submenu" id="desktopSubMenu">
+                        <a href="AdultFormation.html#exodusTitle"><button>Exodus 90</button></a>
+                        <a href="AdultFormation.html#catholicMen"><button>Catholic Men's Prayer And Study Group</button></a>
+                        <a href="AdultFormation.html#prayerAndStudy"><button>Prayer And Study Opportunities</button></a>
+                    </div>
+                </div>
+
+                <a href="./Events.html"><button>Events</button></a>
+                <a href="./testimonies.html"><button>Testimonials</button></a>
+                <a href="./Prayer.html"><button>Prayer</button></a>
+                <a href="./Contact.html"><button>Contact</button></a>
+            </nav>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="./index.html"><button>Home</button></a>
+            
+            <!-- Wrapper for Adult Formation + submenu -->
+            <div class="menu-group">
+                <button onclick="toggleSubMenu()">Adult Formation ▼</button>
+
+                <div class="submenu" id="subMenu">
+                    <a href="AdultFormation.html#exodusTitle"><button>Exodus 90</button></a>
+                    <a href="AdultFormation.html#catholicMen"><button>Catholic Men's Prayer And Study Group</button></a>
+                    <a href="AdultFormation.html#prayerAndStudy"><button>Prayer And Study Opportunities</button></a>
+                </div>
+            </div>
+
+            <a href="./Events.html"><button>Events</button></a>
+            <a href="./testimonies.html"><button>Testimonials</button></a>
+            <a href="./Prayer.html"><button>Prayer</button></a>
+            <a href="./Contact.html"><button>Contact</button></a>
+        </div>
+
+    </header>
+
+    <div class="headerLine">
+
+    </div>
+
+
+    <main>
+        <div class="MainContent">
+
+
+            <div class="Scroll">
+                
+            </div>        
+
+        </div>
+      
+    </main>
+
+    <footer>
+        <p>Fishers Of Faith © 2025</p>
+    </footer>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

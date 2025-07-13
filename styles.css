@@ -8,6 +8,12 @@
 
 p, ul{
 font-size: 20px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+h1 {
+  color: #531212;
 }
 
 html, body {
@@ -18,6 +24,7 @@ html, body {
 
 #titleWebsite {
     font-size: 60px;
+    color: #faf5f2;
 }
 
 .wrapper {
@@ -27,7 +34,7 @@ html, body {
 }
 
 .headerLine {
-    background-color: #e0b546;
+    background-color: #956a35;
     padding: 5px 5px;
 }
 
@@ -36,8 +43,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #25272a;
-  color: white;
+  background-color: #531212;
+  color: #faf5f2;
   padding: 20px 10px;
   background-image: url('I');
 }
@@ -45,8 +52,8 @@ html, body {
 nav button, .mobile-menu button {
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: white;
-  color: black;
+  background-color: #faf5f2;
+  color: #531212;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -55,7 +62,7 @@ nav button, .mobile-menu button {
 }
 
 nav button:hover, .mobile-menu button:hover {
-  background-color: #e0b546;
+  background-color: #956a35;
 }
 
 /* Hamburger icon */
@@ -70,7 +77,7 @@ nav button:hover, .mobile-menu button:hover {
   max-height: 0;
   overflow: hidden;
   transition: max-height .5s ease;
-  background-color: #2a2527;
+  background-color: #531212;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -113,6 +120,7 @@ nav button:hover, .mobile-menu button:hover {
   margin: 0.25rem 0;
   background-color: white; 
   font-size: 14px;
+  color: #531212;
 }
 
 .desktop-nav .submenu {
@@ -158,11 +166,14 @@ main {
   display: flex;
   justify-content: center;
   align-content: center;
+  /*background-image: url(Michael-B.jpg);*/
 }
 
 .Scroll {
   max-width: 50%;
-  background-color: #f5f5dc;
+  background-color: #faf5f2;
+  border: 2px #531212 solid;
+  border-radius: 8px;
 }
 
 .HomeContainer, .PrayerContainer h1 {
@@ -191,6 +202,8 @@ main {
 
 .PrayerContainer p {
   padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -307,21 +320,22 @@ main {
   font-size: 1rem;
   cursor: pointer;
 }
+
 .contact {
   padding: 15px 25px;
 }
 
 .contact-form {
-  max-width: 500px;
-  margin: 2rem auto; 
+  width: 600px;
+  max-width: 600px;
+  margin: 2rem 2rem; 
   padding: 2rem;
-  background-color:  #2a2527;
+  background-color:  #531212;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: white;
+  color: #faf5f2;
   font-family: 'Crimson Text', 'Courier New', Courier, monospace;
   }
 
@@ -336,23 +350,23 @@ main {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  background-color: white;
+  background-color: #faf5f2;
   }
 
 .contact-form button {
-  background-color: white;
+  background-color: #faf5f2;
   padding: 10px 10px;
   border-radius: 8px;
   transition: background-color 0.5s ease;
 }
 
 .contact-form button:hover {
-  background-color: #e0b546;
+  background-color: #956a35;
 }
 
 footer {
-  background-color: #2a2527;
-  color: white;
+  background-color: #531212;
+  color: #faf5f2;
   text-align: center;
   padding: 1rem;
 }
@@ -425,8 +439,8 @@ footer {
 
 .image-table img {
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
   margin: 0;
   padding: 0;
@@ -458,3 +472,101 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.image-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.image-container2 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  pointer-events: none;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.image-text .subtext {
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+  margin-top: 4px;
+}
+
+
+
+
+
+
+.goals {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.goals div {
+  max-width: 20%;
+  height: 250px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: #faf5f2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: 2px #531212 solid;
+}
+
+.goals2 {
+  margin-right: 20px;
+}
+
+.exodus90Button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #531212;
+  color: #faf5f2;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.5s ease;
+  margin-bottom: 10px;
+}
+
+.exodus90Button:hover {
+  background-color:#956a35;
+}
+
+.exodus90Button a {
+  color: #faf5f2;
+  text-decoration: none;
+}
+
+.exodus90Button a:visited {
+  color: #faf5f2;
+}

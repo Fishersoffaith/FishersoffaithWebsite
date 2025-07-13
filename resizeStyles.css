@@ -12,4 +12,42 @@
     margin: 0.5rem 0;
     width: 100%;
   }
+
+  .Scroll {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .goals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goals div {
+    max-width: 80%;
+    height: 150px;
+  }
+
+  .goals2 {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact-form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form {
+    width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-form {
+    width: 180px;
+  }
 }
